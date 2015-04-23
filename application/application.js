@@ -1,3 +1,16 @@
+
+$(document).on("click","button",function(){
+
+var message = $(this).closest(".panel").find("a").attr("tel");
+
+window.plugins.socialsharing.share(' message','good subject' );
+});
+
+
+
+
+
+
 $(document).on("pagecreate", "#page1", function () {
     var ic = '<span class="ui-icon-minus ui-btn-icon-notext inlineIcon"></span>';
     $(".ui-li-divider").prepend(ic);
