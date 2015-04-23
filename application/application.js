@@ -3,7 +3,8 @@ $(document).on("click","button",function(){
 
 var message = $(this).closest(".panel").find("a").attr("tel");
 
-window.plugins.socialsharing.share(' message','good subject' );
+window.plugins.socialsharing.share(message,'good subject' );
+
 });
 
 
