@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="application/application.js" type="text/javascript"></script>
+
+<style>
+#page1 h1{
+
+background-color:black;
+
+}
+.ui-listview>.ui-li-divider {
+    background-color: orange;
+    color:blue;
+    padding-left: 0.5em;
+}
+.inlineIcon {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+#btnExpand, #btnCollapse{
+
+background-color:green;
+}
+
+</style>
+
+</head>
+
+<body>
+<div data-role="page" id="page1">
+    <div data-role="header" ><h1>蒙城黄页</h1>   </div>
+	
+	
+    <div class="ui-content" role="main">
+       
+        <div class="ui-grid-a ui-mini">
+            <div class="ui-block-a"><a id="btnExpand" class="ui-btn ui-corner-all collapseExpand">Expand All</a>
+
+            </div>
+            <div class="ui-block-b"><a id="btnCollapse" class="ui-btn ui-corner-all collapseExpand">Collapse All</a>
+
+            </div>
+        </div>
+        <ul data-role="listview" data-filter="true" data-autodividers="false" data-inset="true" data-divider-theme="a" >           
+      
+	  <li data-role="list-divider">政府部门</li>
+	  <li><a href="#1">加拿大大使馆</a></li>
+      <li><a href="#2">警察.火警.救护车</a></li>
+      <li><a href="#3">电话号码查询</a></li>
+      <li><a href="#4">免费法律热线</a></li>
+      <li><a href="#5">蒙城华人服务中心</a></li>
+      <li><a href="#6">驻蒙特利尔总领事馆</a></li>
+      <li><a href="#7">加拿大移民局</a></li>
+      <li><a href="#8">魁省公司注册</a></li>
+      <li><a href="#9">魁北克法院</a></li>
+      <li><a href="#10">加拿大税务局</a></li>
+     
+	
+	  <li data-role="list-divider">会计报税</li>
+	        <li><a href="#">大中会计</a></li>
+            <li><a href="#">梁理森会计师</a></li>
+            <li><a href="#">包春香会计师</a></li>
+            <li><a href="#">富源会计事务所</a></li>
+            <li><a href="#">敏月会计事务所</a></li>
+            <li><a href="#">李子良会计师</a></li>
+			
+	        <li><a href="#">余会计师事务所 </a></li>
+            <li><a href="#">东升会计师事务所 </a></li>
+            <li><a href="#">范念泽会计师 </a></li>
+            <li><a href="#">罗黄会计师楼</a></li>
+            <li><a href="#">叶少光会计师事务所 </a></li>
+            <li><a href="#"> 曹品岳-泰高会计<</a></li>
+            <li><a href="#">秦明会计师事务所 </a></li>
+            <li><a href="#">王勤注册会计师CPA<</a></li>
+            <li><a href="#">K&S 仁信财务 Bruce Kuang (CPA) </a></li>
+            <li><a href="#">乐众会计税务咨询 </a></li>
+            <li><a href="#">富源會計師事務所CPA-CGA<</a></li>
+            <li><a href="#">黄云会计师 CGA CPA</a></li>
+            <li><a href="#">葛逸凡会计师</a></li>
+            <li><a href="#">德才(C&H) 注册会计CPA </a></li>
+            <li><a href="#">丰合会计事务所</a></li>
+            <li><a href="#">丽艳会计税务</a></li>
+            <li><a href="#">会计王萍 </a></li>
+			
+			<li data-role="list-divider">公证律师</li>
+            <li><a href="#">麦吉尔大学法律援助中心</a></li>
+	        <li><a href="#">袁飞龙公证</a></li>
+            <li><a href="#">黄颖律师</a></li>
+            <li><a href="#">黄伟才律师</a></li>
+            <li><a href="#">杜凤仙公证师事务所</a></li>
+            <li><a href="#">马凯律师</a></li>
+            <li><a href="#">于宁律师</a></li>
+            <li><a href="#">侯红英律师</a></li>
+            <li><a href="#">敖任明公证律师</a></li>
+            <li><a href="#">白楠麒公证律师</a></li>
+            <li><a href="#">华人专业律师罗华娟</a></li>
+            <li><a href="#">袁飞龙- 公证律师</a></li>
+            <li><a href="#">公证师田华</a></li>
+			
+			
+			<li data-role="list-divider">汽车维修</li>
+            <li><a href="#">AUTO H.K.汽车维修</a></li>
+            <li><a href="#">善美汽车维修</a></li>
+            <li><a href="#">兄弟汽车维修</a></li>
+            <li><a href="#">北方车行</a></li>
+            <li><a href="#">景廉汽车维修专店</a></li>
+            <li><a href="#">亚保罗车身修理厂</a></li>
+            <li><a href="#">寰达汽车维修</a></li>
+            <li><a href="#">荣利汽车修理厂</a></li>
+            <li><a href="#">永顺汽车维修服务中心</a></li>
+            <li><a href="#">大通汽车修理</a></li>
+            <li><a href="#">杨汽车保养护理</a></li>
+			
+			<li><a href="#">名豪汽车维修中心</a></li>
+			<li><a href="#">广信修车行</a></li>
+			<li><a href="#">路坚汽车维修 </a></li>
+			<li><a href="#">加艺汽车维修</a></li>
+			<li><a href="#">大通汽车维修 </a></li>
+			<li><a href="#">捷安汽车维修行 </a></li>
+			<li><a href="#">Fuji汽车修理厂 </a></li>
+			<li><a href="#">EZ 汽车维护 </a></li>
+			<li><a href="#">老汤修车行</a></li>
+			
+			
+			<li data-role="list-divider">移民留学</li>
+            <li><a href="#">美康投资有限公司</a></li>
+            <li><a href="#">DALMA加拿大移民</a></li>
+            <li><a href="#">加程移民留学</a></li>
+            <li><a href="#">嘎沙那移民服务</a></li>
+            <li><a href="#">嘉力移民</a></li>
+            <li><a href="#">嘉禾移民</a></li>
+            <li><a href="#">加拿大彼洋留学移民</a></li>
+            <li><a href="#">爱佳移民留学</a></li>
+            <li><a href="#">德信移民服务</a></li>
+            <li><a href="#">郑美华移民顾问</a></li>
+            <li><a href="#">加捷移民</a></li>
+			<li><a href="#">路比移民留学顾问</a></li>
+			<li><a href="#">里程移民</a></li>
+			<li><a href="#">Jacques Tamrazo律师</a></li>
+			<li><a href="#">JiMing consulants G.P.</a></li>
+			<li><a href="#">凯信移民</a></li>
+			<li><a href="#">嘉实移民 </a></li>
+			<li><a href="#"> 枫叶探亲美签</a></li>
+			<li><a href="#">达乐马移民</a></li>
+			<li><a href="#">美康移民</a></li>
+			
+			
+			<li data-role="list-divider">摄影复印</li>
+            <li><a href="#">蒙城创意婚纱专业儿童摄影Leon Studio Photography </a></li>
+            <li><a href="#">银田创造室</a></li>
+            <li><a href="#">加东企业印刷公司</a></li>
+            <li><a href="#">创意设计</a></li>
+            <li><a href="#">字世界</a></li>
+            <li><a href="#">FILM LB Cote-Vertu</a></li>
+            <li><a href="#">爱丽斯婚纱影楼</a></li>
+            <li><a href="#">中华美术印务公司</a></li>
+            <li><a href="#">人人印刷公司</a></li>
+            <li><a href="#">真善美摄影</a></li>
+			<li><a href="#">宏宇印刷</a></li>
+			<li><a href="#">亚媒 accophoto</a></li>
+			<li><a href="#">华人复印店</a></li>
+			<li><a href="#">字世界广告公司</a></li>
+			<li><a href="#">各种证件照拍摄服务</a></li>
+			<li><a href="#">张岩摄影工作室</a></li>
+
+			<li data-role="list-divider">餐饮美食</li>
+            <li><a href="#">CHICHA 喫茶小館</a></li>
+            <li><a href="#">成都美食阁</a></li>
+            <li><a href="#">Odaki日餐馆</a></li>
+            <li><a href="#">Schwartz's熏肉店</a></li>
+            <li><a href="#">千鹤（日本餐）</a></li>
+            <li><a href="#">鹏牛肉粉（越南）</a></li>
+            <li><a href="#">加州牛肉粉（越南）</a></li>
+            <li><a href="#">北牛肉粉（越南）</a></li>
+            <li><a href="#">KINOYA（日本）</a></li>
+            <li><a href="#">神户寿司</a></li>
+			<li><a href="#">西贡越南粉（越南）</a></li>
+			<li><a href="#">水晶宫餐厅（越南）</a></li>
+			<li><a href="#">汉城SEOUL BBQ</a></li>
+			<li><a href="#">将太韩国烧烤</a></li>
+			<li><a href="#">Atti 韩国美食</a></li>
+			<li><a href="#">黄家韩食餐馆</a></li>
+	
+            <li><a href="#">Chez Bong 韩国餐厅</a></li>
+			<li><a href="#">食上料理 SUSHI PLUS</a></li>
+			<li><a href="#">PHO HIN （越南风味）</a></li>
+			<li><a href="#">禅屋（日本料理）</a></li>
+			<li><a href="#">Le Vent d\'Osaka（日本餐）</a></li>
+			<li><a href="#">PHO X.O.（越南河粉）</a></li>
+			<li><a href="#">东洋铁板烧 Laval店</a></li>
+			
+					
+            <li><a href="#">天霞韩国烧烤店</a></li>
+			<li><a href="#">麵包蜜語</a></li>
+			<li><a href="#">金松饼家</a></li>
+			<li><a href="#">香妈妈面食料理</a></li>
+			<li><a href="#">兰州拉面</a></li>
+			<li><a href="#">黄莺越南面包 Brossard</a></li>
+			<li><a href="#">嘉莉面包西饼茶餐厅</a></li>
+			<li><a href="#">丽晶饼屋</a></li>
+			<li><a href="#">清燕越南面包餐厅</a></li>
+			<li><a href="#">相扑手拉面馆</a></li>
+			<li><a href="#">高胜面包</a></li>
+			<li><a href="#">乐春林饼店</a></li>
+			<li><a href="#">梅园正宗灌汤包子 饺子</a></li>
+			<li><a href="#">青花苑-市中心</a></li>
+			<li><a href="#">青花苑-唐人街</a></li>
+			<li><a href="#">麦香园餐馆（饺子）</a></li>
+			<li><a href="#">金凤凰烧腊店</a></li>
+			<li><a href="#">潮州卤味烧腊店</a></li>
+			<li><a href="#">王记快餐</a></li>
+			
+			
+			<li data-role="list-divider">超市，食品公司</li>
+			<li><a href="#">家乐福超市</a></li>
+			<li><a href="#">丰收园超市</a></li>
+			<li><a href="#">长城超市</a></li>
+			<li><a href="#">你好超市</a></li>
+			<li><a href="#">天天好--小超市+大厨房</a></li>
+		    <li><a href="#">大富超市</a></li>
+			<li><a href="#">建昌食品公司</a></li>
+			<li><a href="#">金发超级市场（南岸）</a></li>
+			<li><a href="#">金发超市（Cote des Neiges店）</a></li>
+			<li><a href="#">金发超市（JARRY 店）</a></li>
+			<li><a href="#">信荣海味</a></li>
+			<li><a href="#">泰和超级市场</a></li>
+			<li><a href="#">东风市场</a></li>
+			<li><a href="#">金华超级市场</a></li>
+			<li><a href="#">夏威夷市场</a></li>
+			<li><a href="#">世纪超市C&T Marche(St.Laurent)</a></li>
+			<li><a href="#">福泰超级市场</a></li>
+			<li><a href="#">永兴隆面厂</a></li>
+			<li><a href="#">荣丰面厂食品公司</a></li>
+			<li><a href="#">安可食品公司</a></li>
+			<li><a href="#">亚满肉食批发公司</a></li>
+			<li><a href="#">维生食品公司</a></li>
+			<li><a href="#">继发食品公司</a></li>
+			<li><a href="#">阳光食品公司</a></li>
+			<li><a href="#">恒昌食品国际有限公司</a></li>
+			
+			<li><a href="#">嘉华贸易有限公司</a></li>
+			<li><a href="#">华香食品公司</a></li>
+			<li><a href="#">北美食品公司</a></li>
+			<li><a href="#">富利面厂食品有限公司</a></li>
+			<li><a href="#">利丰食品公司</a></li>
+			<li><a href="#">大丰国际有限公司</a></li>
+			<li><a href="#">东方豆品公司</a></li>
+			<li><a href="#">满地可芽菜面厂有限公司</a></li>
+			<li><a href="#">惜缘海参行</a></li>
+			<li><a href="#">万顺农产</a></li>
+			<li><a href="#">加拿大海参馆</a></li>
+			<li><a href="#">盛泰超市</a></li>
+			<li><a href="#">世纪超市(南岸Brossard)</a></li>
+			
+			
+		   <li data-role="list-divider">美容美发</li>
+			<li><a href="#">专业新娘化妆发型设计</a></li>
+			<li><a href="#">意念丝发型设计</a></li>
+			<li><a href="#">孟娜美发屋</a></li>
+			<li><a href="#">丽芳发型屋</a></li>
+			<li><a href="#">虹虹发廊</a></li>
+			<li><a href="#">Salon Tonus 发廊</a></li>
+			<li><a href="#">吉雅造型屋</a></li>
+			<li><a href="#">芳芳造型</a></li>
+			<li><a href="#">吴姐发艺</a></li>
+			<li><a href="#">茵茵新娘化妆发型设计</a></li>
+			<li><a href="#">温泉Oasis</a></li>
+			<li><a href="#">韩国发型屋</a></li>
+			<li><a href="#">他与她发型设计</a></li>
+		    <li><a href="#">美之舍美容纤体水疗中心</a></li>
+			<li><a href="#">Clark街理发店</a></li>
+			<li><a href="#">峰格发型</a></li>
+			<li><a href="#">西岛温馨家庭美发</a></li>
+		    <li><a href="#">Zhang发廊</a></li>
+			<li><a href="#">仪美乐纤体美颜中心</a></li>
+			<li><a href="#">发彩发型屋</a></li>		
+			<li><a href="#">伍洲发型屋</a></li>
+		    <li><a href="#">美颜坊</a></li>
+			<li><a href="#">尚龙美发连锁</a></li>
+			<li><a href="#">颜红美容会所</a></li>
+			<li><a href="#">蒙城专业美发Ryan</a></li>
+		    <li><a href="#">天天好剪发服务</a></li>
+			<li><a href="#">颜红美容会馆</a></li>
+			<li><a href="#">PeauOlogie皮肤科美容诊所</a></li>
+			<li><a href="#">仪美乐纤体美颜</a></li>
+			<li><a href="#">玉兰温泉</a></li>
+			<li><a href="#">染染发型</a></li>
+			<li><a href="#">铭阳发廊（大连小李）</a></li>
+			
+			
+			
+			
+			 <li data-role="list-divider">数码通信</li>
+			<li><a href="#">吉安电子</a></li>
+			<li><a href="#">手机电脑维修</a></li>
+			<li><a href="#">电脑修理王</a></li>
+			<li><a href="#">沃特电脑维修中心</a></li>
+			<li><a href="#">SHAW 公司</a></li>
+			<li><a href="#">凯亚电讯</a></li>
+			<li><a href="#">CIK通信公司</a></li>
+			<li><a href="#">BELL 公司</a></li>
+			<li><a href="#">TPK ALARMS</a></li>
+			<li><a href="#">Primecables</a></li>
+			<li><a href="#">Virgin Mobile</a></li>
+			<li><a href="#">Fido</a></li>
+			<li><a href="#">Rogers</a></li>
+			<li><a href="#">通科技IT服务</a></li>
+			<li><a href="#">优越电脑</a></li>
+			<li><a href="#">MTL电脑之友</a></li>
+			<li><a href="#">科信电脑医院</a></li>
+			<li><a href="#">123inkcartridges</a></li>
+			
+			
+			 <li data-role="list-divider">旅游机票</li>
+			<li><a href="#">欢乐假期</a></li>
+			<li><a href="#">协和旅行社</a></li>
+			<li><a href="#">翡翠旅行社</a></li>
+			<li><a href="#">千合假期</a></li>
+			<li><a href="#">嘉年華假期</a></li>
+			<li><a href="#">天宝旅游</a></li>
+			<li><a href="#">信诚旅游</a></li>
+			<li><a href="#">远东旅行社</a></li>
+			<li><a href="#">喜途游（商务高端团加拿大地接）</a></li>
+			<li><a href="#">鹏顺国际旅行社MVIPTOUR</a></li>
+			<li><a href="#">翔达旅行社</a></li>
+			<li><a href="#">华景假期</a></li>
+			<li><a href="#">假日旅行社</a></li>
+			
+			
+			 <li data-role="list-divider">教育培训</li>
+			 
+			<li><a href="#">加德学院</a></li>
+			<li><a href="#">凤凰艺术学校</a></li>
+			<li><a href="#">星辰学院</a></li>
+			<li><a href="#">新世纪中文学校</a></li>
+			<li><a href="#">雀之灵</a></li>
+			<li><a href="#">琢玉苑</a></li>
+			<li><a href="#">快乐赢家</a></li>
+			<li><a href="#">三佳中文</a></li>
+			<li><a href="#">英才学院</a></li>
+			<li><a href="#">三佳网球</a></li>
+			<li><a href="#">博尔沙中文学校</a></li>
+			<li><a href="#">北美教育 </a></li>
+			<li><a href="#">钢琴•画布 </a></li>
+			<li><a href="#">Access成人教育和职业培训中心 </a></li>
+			<li><a href="#">Steve英语学校 </a></li>
+			<li><a href="#">加拿大凯亚学院</a></li>
+			<li><a href="#">地平线教育集团</a></li>
+			<li><a href="#">枫叶学院 </a></li>
+			<li><a href="#">佳华中文学校 </a></li>
+			<li><a href="#">Qin Academy</a></li>
+			<li><a href="#">The Word </a></li>
+			<li><a href="#"> Argo Bookshop</a></li>
+			<li><a href="#">私人法语辅导</a></li>
+			<li><a href="#">钢琴调音，钢琴修理，钢琴选购</a></li>
+			<li><a href="#"> 太e中医学院</a></li>
+			<li><a href="#"> 蒙特利尔中华文艺学校</a></li>
+			<li><a href="#">钢琴•画布</a></li>
+			
+			
+			
+			<li><a href="#">宝宝儿童中心 </a></li>
+			<li><a href="#">威斯特艾伦学院 </a></li>
+			<li><a href="#">两仪太极咏春健身社</a></li>
+			<li><a href="#">宋道学院</a></li>
+			<li><a href="#">华联国际学校 </a></li>
+			<li><a href="#">东方国际推拿学校</a></li>
+			<li><a href="#">博尔沙中文学校</a></li>
+			<li><a href="#">快乐赢家教育机构 </a></li>
+			<li><a href="#">蒙城王土音乐中心</a></li>
+			<li><a href="#"> Miila国际语言学院 </a></li>
+			<li><a href="#">英才学院 </a></li>
+			<li><a href="#">扬子学院</a></li>
+			<li><a href="#"> 新东方语言学院 </a></li>
+			<li><a href="#">西岛中文学校  </a></li>
+			<li><a href="#">Marianopolis  </a></li>
+			
+			<li><a href="#">Laval 大学  </a></li>
+			<li><a href="#">Polytechnique  </a></li>
+			<li><a href="#"> UQAM 大学 </a></li>
+			<li><a href="#">魁北克法语教委 </a></li>
+						
+			<li><a href="#">Dawson College</a></li>
+			<li><a href="#">蒙特利尔大学</a></li>
+			<li><a href="#">Lasalle College</a></li>
+			<li><a href="#">Concordia university  </a></li>
+			
+			<li data-role="list-divider">教会社团</li>
+			<li><a href="#">满地可中华天主堂</a></li>
+			<li><a href="#">蒙特利尔国语基督教会</a></li>
+			<li><a href="#">蒙特利尔大慈佛堂</a></li>
+			<li><a href="#">加拿大满地可市中国宗教信仰中心-天后宫</a></li>
+			
+			<li><a href="#">友谊相济会--玉禅宫</a></li>
+			<li><a href="#">善一堂道德协会</a></li>
+			<li><a href="#">基徒教蒙特娄灵粮堂</a></li>
+		
+			<li><a href="#">蒙特利尔华人宣道会</a></li>
+			<li><a href="#">蒙特利尔基督教天主堂</a></li>
+			<li><a href="#">西岛华人宣道会恩福堂</a></li>
+			<li><a href="#">真佛宗禅海雷藏寺</a></li>
+			<li><a href="#">华光满城功德会</a></li>
+			<li><a href="#">玄空寺</a></li>
+			<li><a href="#">柬埔寨寺庙</a></li>
+			<li><a href="#">莲花寺</a></li>
+			<li><a href="#">观音寺</a></li>
+			<li><a href="#">三宝寺</a></li>
+			<li><a href="#">三宝寺-蒙城</a></li>
+			<li><a href="#">澄水寺</a></li>
+			<li><a href="#">满地可佛光山华严寺</a></li>
+			<li><a href="#">蒙城最大英文長老教會</a></li>
+			<li><a href="#">满地可华人宣道会恩典堂</a></li>
+			<li><a href="#">魁北克福建同乡会</a></li>
+			<li data-role="list-divider">网站制作</li>
+			<li><a href="#">利兵网站制作</a></li>
+			<li><a href="#">专业网站制作</a></li>
+			<li><a href="#">京晖设计工作室</a></li>
+			<li><a href="#">网站制作</a></li>
+			
+			<li data-role="list-divider">翻译服务</li>
+			<li><a href="#">魁省认证翻译李先生</a></li>
+			<li><a href="#">Adsion认证翻译</a></li>
+			<li><a href="#">卓越Joy翻译服务</a></li>
+			<li><a href="#">腾飞英语翻译</a></li>
+			
+			
+			<li data-role="list-divider">休闲娱乐</li>
+			<li><a href="#">魔艺传奇</a></li>
+			<li><a href="#">诺特丹圣母大教堂</a></li>
+			<li><a href="#">蒙特利尔植物园</a></li>
+			<li><a href="#">Casino 蒙特利尔赌场</a></li>
+			
+			<li><a href="#">假日桑拿洗浴会馆</a></li>
+			<li><a href="#">Karaoke MI KTV 2</a></li>
+			
+			<li data-role="list-divider">保险金融</li>
+		
+			<li><a href="#">Allstate房屋车险孟立英</a></li>
+			<li><a href="#">Allstate房屋车险彭冰</a></li>
+			<li><a href="#">鼎加金融 Topplus Financial</a></li>
+			<li><a href="#">黄渝保險</a></li>
+			<li><a href="#">李娅-财经安全顾问</a></li>
+			<li><a href="#">黎仲冰</a></li>
+			<li><a href="#">周文德-特许金融分析师</a></li>
+			<li><a href="#">陈惠芬</a></li>
+			<li><a href="#">邱少豪保险代理公司</a></li>
+			<li><a href="#">杨润秋理财</a></li>
+			<li><a href="#">朱玉华ASassur保险公司</a></li>
+			<li><a href="#">王勤基金投资，人寿保险，医疗保险</a></li>
+			<li><a href="#">曹成财富管理</a></li>
+			<li><a href="#">曹成财富管理</a></li>
+			<li><a href="#">刘薇理财</a></li>
+			
+			<li data-role="list-divider">维护装修</li>
+			<li><a href="#">创意厨卫</a></li>
+			<li><a href="#">ProntoDrain</a></li>
+			<li><a href="#">KSI橱柜</a></li>
+			<li><a href="#">精工建筑集团公司</a></li>
+			<li><a href="#">南方师傅专业装修</a></li>
+			<li><a href="#">雅居装修</a></li>
+			<li><a href="#">H.X.木工制造</a></li>
+			<li><a href="#">羽鸿 室内设计／平面设计</a></li>
+			<li><a href="#">美枫厨卫</a></li>
+			<li><a href="#">GE商业清洁保洁服务</a></li>
+			
+			<li data-role="list-divider">家电家具</li>
+			<li><a href="#">金羚洗衣机</a></li>
+			<li><a href="#">美家电器</a></li>
+			<li><a href="#">时代精品家私</a></li>
+			<li><a href="#">鸿景家俱平价超市</a></li>
+			<li><a href="#">CIEC 窗帘，窗帘杆</a></li>
+			<li><a href="#">爱普电器</a></li>
+			<li><a href="#">美惠电器</a></li>
+			
+				<li data-role="list-divider">接送搬家</li>
+			<li><a href="#">Antek 安达物流</a></li>
+			<li><a href="#">阿周大VAN</a></li>
+			<li><a href="#">最便捷接送机和ikea提货</a></li>
+			<li><a href="#">罗太西人搬家</a></li>
+			<li><a href="#">李氏货运</a></li>
+			<li><a href="#">新车老司机</a></li>
+			<li><a href="#">蚂蚁搬家</a></li>
+			<li><a href="#">大VAN小轿车</a></li>
+			<li><a href="#">安保van和卡车服务</a></li>
+			<li><a href="#">超大VAN搬家接送</a></li>
+			<li><a href="#">千禧搬家</a></li>
+			<li><a href="#">“VAN”里挑一</a></li>
+			<li><a href="#">老谢七座VAN</a></li>
+			<li><a href="#">老曹用车</a></li>
+			<li><a href="#">胖哥电招车</a></li>
+			<li><a href="#">宜家捷运</a></li>
+			<li><a href="#">多伦多专线</a></li>
+			<li><a href="#">给力搬家</a></li>
+			<li><a href="#">大杨搬家</a></li>
+			<li><a href="#">万里接机</a></li>
+			<li><a href="#">平安运输</a></li>
+			<li><a href="#">大小型搬家</a></li>
+			<li><a href="#">宏瑞搬家</a></li>
+			<li><a href="#">德福佳运</a></li>
+			
+        </ul>
+	</div>
+
+	
+	
+	 <div data-role="panel" id="1"> 
+    <h2>加拿大大使馆</h2>
+    <p> <a tel="613-7893-434"> <button data-role="button" data-inline="true" data-theme="a" ><img src="jquery-mobile/images/icons-png/phone-white.png"> 613-7893-434 </button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+   <div data-role="panel" id="2"> 
+    <h2>警察.火警.救护车</h2>
+    <p> <a tel="911"> <button data-role="button" data-inline="true" data-theme="a" ><img src="jquery-mobile/images/icons-png/phone-white.png">911 </button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+   <div data-role="panel" id="3"> 
+    <h2>电话号码查询</h2>
+    <p> <a tel="411"> <button data-role="button" data-inline="true" data-theme="a" >411 </button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+   <div data-role="panel" id="4"> 
+    <h2>免费法律热线</h2>
+    <p> <a tel="604-601-6100"> <button data-role="button" data-inline="true" data-theme="a"> 604-601-6100 </button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+   <div data-role="panel" id="5"> 
+    <h2>蒙城华人服务中心</h2>
+    <p> <a tel="514 861-5244"> <button data-role="button" data-inline="true" data-theme="a" > 514 861-5244</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+  <div data-role="panel" id="6"> 
+    <h2>驻蒙特利尔总领事馆</h2>
+    <p> <a tel="1-514-419-6748 Ex 633"> <button data-role="button" data-inline="true" data-theme="a" > 1-514-419-6748 Ex 633</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+  <div data-role="panel" id="7"> 
+    <h2>加拿大移民局</h2>
+    <p> <a tel="1-888-242-2100"> <button data-role="button" data-inline="true" data-theme="a" > 1-888-242-2100</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+
+   <div data-role="panel" id="8"> 
+    <h2>魁省公司注册</h2>
+    <p><a tel="514-644-4545"> <button data-role="button" data-inline="true" data-theme="a" >514-644-4545</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+  <div data-role="panel" id="9"> 
+    <h2>魁北克法院</h2>
+    <p><a tel="1-866 536-5140"> <button data-role="button" data-inline="true" data-theme="a" >1-866 536-5140</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+  <div data-role="panel" id="10"> 
+    <h2>加拿大税务局</h2>
+    <p><a tel="1-800-267-6999"> <button data-role="button" data-inline="true" data-theme="a" >1-800-267-6999
+</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+
+  
+   <div data-role="panel" id="11"> 
+    <h2>大中会计</h2>
+    <p><a tel="5146998860"> <button data-role="button" data-inline="true" data-theme="a" >5146998860
+</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+  
+   <div data-role="panel" id="12"> 
+    <h2>梁理森会计师</h2>
+    <p><a tel="438-228-1683"> <button data-role="button" data-inline="true" data-theme="a" >438-228-1683
+</button></a></p>
+    </br></br></br>
+	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
+  </div> 
+  
+ 
+  
+  
+  
+   <div class="ui-grid-a ui-mini">
+            <div class="ui-block-a"><a id="btnExpand" class="ui-btn ui-corner-all collapseExpand">Expand All</a>
+
+            </div>
+            <div class="ui-block-b"><a id="btnCollapse" class="ui-btn ui-corner-all collapseExpand">Collapse All</a>
+
+            </div>
+        </div>
+  
+   <div class="ui-grid-solo ui-mini" >
+            <div class="ui-block-a">
+                <label>
+                    <input type="checkbox" name="chkAnim" id="chkAnim" />使用动画格式收缩和扩展</label>
+            </div>
+        </div>
+		
+		
+        <!-- /listview -->
+        
+        <ul data-role="listview" data-inset="true" data-divider-theme="a">
+            <li data-role="list-divider">Mail</li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Outbox</a></li>
+            <li data-role="list-divider">Contacts</li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Work</a></li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
