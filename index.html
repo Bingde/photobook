@@ -38,7 +38,7 @@ background-color:green;
 
 </head>
 
-<body onLoad="Show()">
+<body >
 <div data-role="page" id="page1">
     <div data-role="header" ><h1>蒙城黄页</h1>   </div>
 	
@@ -641,79 +641,7 @@ background-color:green;
         </ul>
     </div>
 </div>
-<script>
- function onLoad() {
-     
-      if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
-           document.addEventListener('deviceready', initApp, false);
-			document.getElementById("demo1").innerHTML = localtime;
-      } else {
-        initApp();
-   }
-		
-  }
-	
-  var admobid = {};
-   if( /(android)/i.test(navigator.userAgent) ) { // for android
-      admobid = {
-          banner: 'ca-app-pub-7973587087974413/2609977283', // or DFP format "/6253334/dfp_example_ad"
-          interstitial: 'ca-app-pub-7973587087974413/2821153288'
-      };
-    } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
-      admobid = {
-           banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
-           interstitial: 'ca-app-pub-xxx/kkk'
-       };
-  } else { // for windows phone
-        admobid = {
-          banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
-          interstitial: 'ca-app-pub-xxx/kkk'
-       };
-  }
-	
-	  function initApp() {
-		if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
-		initAd();
-		     createSelectedBanner();
-   }
-   
- function initAd(){
-      var defaultOptions = {
-          // bannerId: admobid.banner,
-          // interstitialId: admobid.interstitial,
-            // adSize: 'SMART_BANNER',
-          // width: integer, // valid when set adSize 'CUSTOM'
-          // height: integer, // valid when set adSize 'CUSTOM'
-          position: AdMob.AD_POSITION.TOP_CENTER,
-        // offsetTopBar: false, // avoid overlapped by status bar, for iOS7+
-        bgColor: 'white', // color name, or '#RRGGBB'
-            // x: integer,		// valid when set position to 0 / POS_XY
-           // y: integer,		// valid when set position to 0 / POS_XY
-            isTesting: true, // set to true, to receiving test ad for testing purpose
-            // autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
-        };
-        AdMob.setOptions( defaultOptions );
-    }
-    
-  function Show(){
-   //AdMob.setOptions( defaultOptions );
-    AdMob.createBanner( {
-    adId:admobid.banner, 
-    adSize:'CUSTOM',  width:270, height:40, 
-    overlap:false, 
-    position:AdMob.AD_POSITION.TOP_CENTER, 
-    autoShow:true} );
-	
-  }
-  function onResize(){
-        var s = document.getElementById('sizeinfo');
-        s.innerHTML = "web view: " + window.innerWidth + " x " + window.innerHeight;
-    }
-    function Showbig(){
-   AdMob.prepareInterstitial({
-    adId: admobid.interstitial,
-   autoShow: true});}
-</script>
+
 
 </body>
 </html>
